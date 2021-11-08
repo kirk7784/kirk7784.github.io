@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Trainee Treasure Hunt</title>
+    <link rel="stylesheet" href="treasurehunt.css">
+    <link rel="icon" href="https://twemoji.maxcdn.com/2/svg/1f36b.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="treasurehunt.js"></script>
+</head>
+<body>
+    <div id="tech-sergeant">
+      <img src="https://www.aetc.af.mil/portals/88/images/Update/DSC_8981.jpg" alt="Tech Sergeant yelling at trainees" height="400px">
+    </div>
+    <div class="top-stuff">
+      <div id="top-stuff-inside">
+        <h1>Find the Candy Bar</h1>
+        <div class="rules">  
+          <h2 id="rules-intro">Avoid the Tech Sergeant!</h2>
+          <ul>
+              <li>Click the boxes to reveal what's on the map</li>
+              <li>If you click on the Tech Sergeant, you lose</li>
+              <li>If you click on the candy bar, you win</li>
+              <li>*There are two Tech Sergeants so watch out!*</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="gameboard">
+      <p id="alert">You have 3 tries left</p>
+      <table class="cursor">
+        <tr>
+          <td id="0" onclick="treasure(0)">❓</td>
+          <td id="1" onclick="treasure(1)">❓</td>
+          <td id="2" onclick="treasure(2)">❓</td>
+        </tr>
+        <tr>
+          <td id="3" onclick="treasure(3)">❓</td>
+          <td id="4" onclick="treasure(4)">❓</td>
+          <td id="5" onclick="treasure(5)">❓</td>
+        </tr>
+        <tr>
+          <td id="6" onclick="treasure(6)">❓</td>
+          <td id="7" onclick="treasure(7)">❓</td>
+          <td id="8" onclick="treasure(8)">❓</td>
+        </tr>
+      </table>
+      <button id="reset-button" type="button" onclick="window.location.reload()">Reset</button>
+    </div>
+    
+    <footer id="footer">
+        <p><a href="https://www.airforce.com/" target="_blank">AIM HIGH!</a></p>
+        <p>Copyright JK Productions 2021</p>
+    </footer>
+
+</body>
+</html>
